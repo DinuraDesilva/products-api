@@ -10,9 +10,7 @@ import java.time.LocalDate;
  * Already provided:
  *   GET /hello   -> a simple greeting
  *   GET /status  -> a simple status message
- * TODO (Lab Activity 3):
- *   Add a new endpoint GET /goodbye that returns the String
- *   "Goodbye from Spring Boot!"
+ * T
  */
 @RestController
 public class HelloController {
