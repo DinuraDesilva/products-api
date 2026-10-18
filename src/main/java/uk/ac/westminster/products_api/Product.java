@@ -1,8 +1,8 @@
 package uk.ac.westminster.products_api;
 
-public class Product {
-    private Long id;
-    private String name;
+//public class Product {
+   private Long id;
+   private String name;
     private double price;
 
     public Product() {}
