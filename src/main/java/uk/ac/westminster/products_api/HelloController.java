@@ -14,7 +14,6 @@ import java.time.LocalDate;
  *   Add a new endpoint GET /goodbye that returns the String
  *   "Goodbye from Spring Boot!"
  */
-//Getmappings
 @RestController
 public class HelloController {
 
