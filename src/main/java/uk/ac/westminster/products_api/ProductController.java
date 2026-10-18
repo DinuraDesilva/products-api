@@ -1,5 +1,6 @@
 package uk.ac.westminster.products_api;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,4 +36,8 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 
+    @GetMapping("/products/search")
+    public List<Product> search(@RequestParam String name) {
+        return productService.findByName(name);
+    }
 }
