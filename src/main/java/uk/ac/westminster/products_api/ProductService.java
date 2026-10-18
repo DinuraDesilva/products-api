@@ -1,7 +1,7 @@
 package uk.ac.westminster.products_api;
 
 import org.springframework.stereotype.Service;
-
+import java.util.Optional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,5 +19,10 @@ public class ProductService {
         product.setId(nextId++);
         products.add(product);
         return product;
+    }
+    public Optional<Product> getProductById(Long id) {
+        return products.stream()
+                .filter(p -> p.getId().equals(id))
+                .findFirst();
     }
 }
